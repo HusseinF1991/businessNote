@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrationActivity"
+    android:background="@drawable/firstpage">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_RegistrationActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="@android:color/white">
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/etxtNewUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="اسم المستخدم"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/etxtNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="الرمز السري"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"/>
+
+
+    <EditText
+        android:id="@+id/etxtConfirmNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="تاكيد الرمز السري"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnBuildRegistrationKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="تاكيد"
+        android:textColor="#ffffff"
+        android:background="@drawable/long_button"/>
+
+    <TextView
+        android:id="@+id/txtRegistrationKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="مفتاح التسجيل يظهر هنا"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etxtActivationKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ادخل مفتاح التفعيل"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnCreateNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="موافق"
+        android:enabled="false"
+        android:textColor="#ffffff"
+        android:background="@drawable/long_button"/>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BusinessNote</string>
+
+    <string name="DirListAdapterTag1">DirListAdapterTag1</string>
+
+    <string name="SearchListAdapterTag1">DirListAdapterTag1</string>
+
+    <!-- string to recognize if this app copy is for admin or for users -->
+    <string name="AdminAppOrUsersApp">usersApp</string>
+
+
+    <!-- for export_db_dialog.xml widgets -->
+    <string name="SaveDbOnly">للحفظ في مجلد BusinessNoteDBs فقط</string>
+    <string name="SaveNSendDb">للحفظ في مجلد BusinessNoteDBs ثم ارسالها</string>
+</resources>

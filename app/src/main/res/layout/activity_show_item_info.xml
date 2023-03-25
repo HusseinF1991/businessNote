@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowItemInfoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_ShowItemInfoActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:titleTextColor="@android:color/white">
+        </androidx.appcompat.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/etxtItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="اسم المنتج" />
+
+        <EditText
+            android:id="@+id/etxtItemSellPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="سعر البيع"
+            android:inputType="number"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/etxtItemBoughtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="سعر الشراء"
+            android:gravity="center"
+            android:inputType="number"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/etxtItemSupplier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="المجهز"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/etxtItemNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ملاحظات"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/picbItemImage"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="#ffffff"
+                android:padding="1dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gallry_btn" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="اختر صورة للمنتج"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/btnItemImg_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="كاميرا"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/btnItemImg_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="الاستوديو"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp">
+
+            <ImageView
+                android:id="@+id/picbItemAttachment"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="#ffffff"
+                android:padding="1dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gallry_btn" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="اختر صورة مرفقة للمنتج"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/btnItemAttachment_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="كاميرا"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/btnItemAttachment_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="الاستوديو"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+
+            <Button
+                android:id="@+id/btnUpdateItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تحديث"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/long_button"/>
+
+            <Button
+                android:id="@+id/btnCancelActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الغاء"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/long_button"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

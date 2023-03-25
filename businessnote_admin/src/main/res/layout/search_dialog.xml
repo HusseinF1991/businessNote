@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="بحث في : "
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <RadioButton
+            android:id="@+id/radBtnSearchForBoth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:text="كلاهما" />
+
+        <RadioButton
+            android:id="@+id/radBtnSearchForFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:text="المجلدات" />
+
+        <RadioButton
+            android:id="@+id/radBtnSearchForItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:text="المنتجات"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/darker_gray" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radBtnSearchInAllFolders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="بحث في جميع المجلدات"
+            android:layoutDirection="rtl"/>
+
+        <RadioButton
+            android:id="@+id/radBtnSearchInCurrentFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="بحث في المجلد الحالي"
+            android:layoutDirection="rtl"
+            android:checked="true"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etxtSearchDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ابحث هنا"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnStartSearchingDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="بحث"/>
+
+        <Button
+            android:id="@+id/btnCancelSearchDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الغاء"/>
+    </LinearLayout>
+
+</LinearLayout>
